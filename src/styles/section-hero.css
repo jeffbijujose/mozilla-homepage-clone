@@ -1,0 +1,140 @@
+#section-hero {
+  background-color: #0290ee;
+  margin-top: 48px;
+}
+
+.section-hero-main-img {
+  margin-top: calc(var(--spacer) * 3);
+}
+
+#section-hero-mozilla-vpn-logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#section-hero-mozilla-vpn-logo-wrapper div {
+  width: 347px;
+  height: 64px;
+
+  background-image: url("/images/section-hero-logo.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section-hero-text-container {
+  padding-bottom: calc(var(--spacer) * 1.5);
+  padding-left: calc(var(--spacer) * 2);
+  padding-right: calc(var(--spacer) * 2);
+  margin-top: calc(var(--spacer) * 3);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-hero-text-container h2 {
+  color: white;
+  font-family: Metropolis, Inter, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.section-hero-text-container p {
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+
+}
+
+.section-hero-text-container a {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.section-hero-text-container a:hover {
+  background-color: #2b2a33;
+  border-color: white;
+  box-shadow: none;
+  color: #fff;
+}
+
+.section-hero-text-container a:active {
+  background-color: #2b2a33;
+  border-color: #bfbfc9;
+  box-shadow: none;
+  color: #fff;
+}
+
+#section-hero div.container-fluid {
+  padding-left: calc(var(--spacer) * 1.5);
+  padding-right: calc(var(--spacer) * 1.5);
+}
+
+#section-hero-get-mozilla-vpn-btn {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media(min-width:768px) {
+  #section-hero {
+    margin-top: 0;
+  }
+
+  #section-hero-mozilla-vpn-logo-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #section-hero-mozilla-vpn-logo-wrapper div {
+    background-position: 0;
+  }
+
+  .section-hero-text-container {
+    padding-bottom: calc(var(--spacer) * 0.5);
+  }
+
+  .section-hero-main-img-col {
+    padding-right: calc(var(--spacer) * 3);
+  }
+
+  .section-hero-main-img {
+    margin-top: 0;
+  }
+
+  .section-hero-text-container h2,
+  .section-hero-text-container p {
+    text-align: start;
+  }
+
+  .section-hero-text-container h2 {
+    font-size: 3.5rem;
+  }
+
+  #section-hero div.container-fluid {
+    padding-left: calc(var(--spacer) * 5);
+    padding-right: calc(var(--spacer) * 5);
+  }
+
+  #section-hero-get-mozilla-vpn-btn {
+    justify-content: flex-start;
+  }
+}
+
+@media(min-width:1312px) {
+  #section-hero div.container-fluid {
+    padding-top: calc(var(--spacer) * 3);
+    padding-bottom: calc(var(--spacer) * 3);
+  }
+}

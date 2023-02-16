@@ -1,0 +1,21 @@
+#section-pocket *.section-text-container a {
+  border-color: transparent;
+  background-color: #0060df;
+  color: white;
+}
+
+#section-pocket *.section-text-container a:hover {
+  border-color: transparent;
+  background-color: #0250bb;
+  color: white;
+}
+
+#section-pocket *.section-text-container a:active {
+  border-color: transparent;
+  background-color: #073072;
+  color: white;
+}
+
+#section-pocket *.section-logo-wrapper div {
+  background-image: url("/images/section-pocket-logo.svg");
+}

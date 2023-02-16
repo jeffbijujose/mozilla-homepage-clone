@@ -1,0 +1,40 @@
+#footer-legal {
+  background-color: black;
+  padding-left: calc(var(--spacer) * 1.5);
+  padding-right: calc(var(--spacer) * 1.5);
+}
+
+#footer-legal ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0;
+}
+
+#footer-legal ul li a {
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: .75rem;
+}
+
+#footer-legal ul li a:hover {
+  text-decoration: none;
+}
+
+#footer-legal p {
+  padding-top: 10px;
+}
+
+#footer-legal p,
+#footer-legal a {
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: .75rem;
+}
+
+#footer-legal a:hover {
+  text-decoration: none;
+}

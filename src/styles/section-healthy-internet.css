@@ -1,0 +1,5 @@
+@media(min-width:1000px) {
+  #section-healthy-internet *.section-main-img-wrapper {
+    justify-content: flex-start;
+  }
+}

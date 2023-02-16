@@ -1,0 +1,164 @@
+header {
+  box-shadow: 0 0 1px 1px rgba(29, 17, 51, .04), 0 0 3px 2px rgba(9, 32, 77, .12), 0 0 2px -3px rgba(29, 17, 51, .12);
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar-show-button {
+  color: transparent; /* For lighthouse score */
+  background-image: url("/images/icons/close-icon-gray.svg");
+  background-repeat: no-repeat;
+  background-color: #ededf0;
+  background-position: 50%;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+}
+
+#navbar-show-button[aria-expanded="false"] {
+  background-image: url("/images/icons/hamburger-icon-gray.svg");
+  background-color: white;
+}
+
+#navbar-show-button:focus-visible {
+  box-shadow: 0 0 0 2px #0060df;
+}
+
+#navbar-show-button[aria-expanded="false"]:focus {
+  background-color: #ededf0;
+}
+
+#header-logo {
+  height: 32px;
+}
+
+#get-mozilla-vpn-button {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #0060df;
+  color: #0060df;
+  border: 2px solid;
+  border-radius: 4px;
+  box-shadow: none;
+
+  font-family: Inter, sans-serif;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+#get-mozilla-vpn-button:hover {
+  background-color: #0250bb;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  color: #fff;
+}
+
+#get-mozilla-vpn-button:active {
+  background-color: #073072;
+  border-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+#get-mozilla-vpn-button:focus {
+  border-color: #008aea;
+  box-shadow: 0 0 0 2px rgba(0, 144, 237, .5);
+}
+
+#get-mozilla-vpn-button:focus-visible {
+  box-shadow: 0 0 0 2px #0060df;
+}
+
+#header-accordion-wrapper {
+  width: 100%;
+}
+
+header *.accordion *.accordion-button {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+header *.accordion *.accordion-button:focus {
+  box-shadow: none;
+}
+
+header *.accordion *.accordion-button::after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%239595a3' stroke-width='2' d='m5 9 7 7 7-7' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+header *.accordion *.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+
+header *.accordion-item {
+  border: none;
+}
+
+header *.accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header *.accordion-body *.list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header *.accordion-body *.list-group-item a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+header *.accordion-body *.list-group-item a img {
+  width: 24px;
+  height: 24px;
+}
+
+header *.accordion-body *.list-group-item a h4 {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: .875rem;
+  color: black;
+  word-break: break-word;
+  margin: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+header *.accordion-body *.list-group-item a h4:hover {
+  border-bottom: 2px solid rgba(0, 0, 0);
+}
+
+header *.accordion-item p {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+header *.accordion-item p a {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+  text-decoration: none;
+}
+
+header *.accordion-item p a:hover {
+  border-bottom: 2px solid #000;
+}
+
+header *.accordion-item h2 {
+  border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}

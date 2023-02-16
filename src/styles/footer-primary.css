@@ -1,0 +1,129 @@
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-primary {
+  padding-top: calc(var(--spacer) * 5);
+  background-color: black;
+}
+
+#footer-primary-logo-wrapper {
+  background-color: black;
+  padding-left: calc(var(--spacer) * 1.5);
+  padding-bottom: calc(var(--spacer) * 1.5);
+}
+
+#footer-primary-logo-wrapper a {
+  display: inline-block;
+  color: transparent; /* For lighthouse score */
+  background-color: black;
+  background-image: url("/images/icons/mozilla-logo-icon.svg");
+  background-size: 100px, 32px;
+  width: 100px;
+  height: 32px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+footer *.accordion {
+  background-color: black;
+  padding-left: calc(var(--spacer) * 1.5);
+  padding-right: calc(var(--spacer) * 1.5);
+}
+
+footer *.accordion *.accordion-button {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  background-color: black;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none;
+}
+
+footer *.accordion *.accordion-button:focus {
+  outline: 1px dotted white;
+}
+
+footer *.accordion *.accordion-button::after {
+  background-image: url("/images/icons/plus-icon-white.svg");
+  background-size: 24px, 24px;
+  transition: transform 0.1s ease-in-out;
+}
+
+footer *.accordion *.accordion-button:not(.collapsed)::after {
+  transform: rotate(45deg);
+}
+
+
+footer *.accordion-item {
+  border: none;
+  color: white;
+  background-color: black;
+  padding-top: calc(var(--spacer) * 1);
+}
+
+footer *.accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  background-color: black;
+}
+
+footer *.accordion-body *.list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: calc(var(--spacer) * 0.3);
+  padding-bottom: calc(var(--spacer) * 0.3);
+  color: white;
+  background-color: black;
+}
+
+footer *.accordion-body *.list-group-item a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+footer *.accordion-body *.list-group-item a img {
+  width: 24px;
+  height: 24px;
+}
+
+footer *.accordion-body *.list-group-item a h4 {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  word-break: break-word;
+  margin: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+footer *.accordion-body *.list-group-item a h4:hover {
+  border-bottom: 2px solid rgba(0, 0, 0);
+}
+
+footer *.accordion-item p {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+footer *.accordion-item p a {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+  text-decoration: none;
+}
+
+footer *.accordion-item p a:hover {
+  border-bottom: 2px solid white;
+}

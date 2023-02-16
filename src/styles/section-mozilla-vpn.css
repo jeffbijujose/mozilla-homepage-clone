@@ -1,0 +1,20 @@
+#section-mozilla-vpn *.section-text-container a {
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+
+#section-mozilla-vpn *.section-text-container a:hover {
+  background-color: #ededf0;
+  color: black;
+}
+
+#section-mozilla-vpn *.section-text-container a:active {
+  border-color: #5e5e72;
+  background-color: #ededf0;
+  color: black;
+}
+
+#section-mozilla-vpn *.section-logo-wrapper div {
+  background-image: url("/images/section-mozilla-vpn-logo.svg");
+}

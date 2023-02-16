@@ -1,0 +1,44 @@
+#footer-lang-form {
+  padding-left: calc(var(--spacer) * 1.5);
+  padding-right: calc(var(--spacer) * 1.5);
+  padding-top: calc(var(--spacer) * 3);
+  padding-bottom: calc(var(--spacer) * 1.5);
+}
+
+#footer-lang-form a {
+  color: white;
+  font-size: .875rem;
+  line-height: 1.5;
+  font-family: Inter, sans-serif;
+}
+
+#footer-lang-form a:hover {
+  text-decoration: none;
+}
+
+#footer-lang-form select {
+  font-size: .75rem;
+  line-height: 1.5;
+  appearance: none;
+  color: black;
+  background-color: #fff;
+  border: 2px solid #9595a2;
+  border-radius: 4px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  font-family: Inter, sans-serif;
+  padding: 8px 15px 8px 8px;
+  margin-top: 10px;
+  width: 175px;
+}
+
+#footer-lang-form select:hover {
+  border-color: #0250bb;
+}
+
+#footer-lang-form select:focus {
+  border-color: #0060df;
+  box-shadow: 0 0 0 2px rgba(0, 144, 237, .5);
+  color: #222;
+  outline: none;
+}

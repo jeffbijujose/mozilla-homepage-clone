@@ -1,0 +1,96 @@
+#section-firefox-account {
+  background-color: #20123a;
+  padding: 48px 24px;
+}
+
+#section-firefox-account *.section-img-heading-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#section-firefox-account *.section-main-img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: calc(var(--spacer) * 1);
+}
+
+#section-firefox-account *.section-button-wrapper a {
+  border-color: transparent;
+  background-color: #0060df;
+  color: white;
+}
+
+#section-firefox-account *.section-button-wrapper a:hover {
+  border-color: transparent;
+  background-color: #0250bb;
+  color: white;
+}
+
+#section-firefox-account *.section-button-wrapper a:active {
+  border-color: transparent;
+  background-color: #073072;
+  color: white;
+}
+
+#section-firefox-account h2 {
+  color: white;
+  font-family: Metropolis, Inter, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+@media(min-width:768px) {
+  #section-firefox-account {
+    padding: 48px 64px;
+  }
+
+  #section-firefox-account *.section-img-heading-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #section-firefox-account *.section-main-img {
+    margin-bottom: 0;
+  }
+
+  #section-firefox-account *.section-main-img-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  #section-firefox-account h2 {
+    font-size: 1.75rem;
+    padding-left: calc(var(--spacer) * 2.5);
+    min-height: 112px;
+    display: flex;
+    align-items: center;
+  }
+
+  #section-firefox-account *.section-button-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media(min-width:1312px) {
+  #section-firefox-account {
+    padding: 48px 64px;
+  }
+}
+
+@media(min-width: 1180px) {
+  #section-firefox-account {
+    /* display: flex; */
+    justify-content: center;
+    padding: 48px 64px;
+  }
+
+  #section-firefox-account *.section-container {
+    width: 1052px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
